@@ -102,11 +102,20 @@ module.exports = {
     new MiniCssExtractPlugin({ filename: "../css/style.css" }),
     new SpriteLoaderPlugin(),
     new BrowserSyncPlugin({
-      files: "**/*.php",
-      host: "localhost",
-      port: "3000",
-      injectChanges: true,
-      // proxy: "http://akademia.stylu"
+      // PHP
+      // files: "**/*.php",
+      // host: "localhost",
+      // port: "3000",
+      // injectChanges: true,
+      // proxy: "http://example.loc"
+
+      // HTML
+      host: 'localhost',
+      port: 3000,
+      files: ['./*.html'],
+      server: {
+        baseDir: ['./']
+      }
     })
   ],
   optimization: {
