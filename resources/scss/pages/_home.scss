@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.top-slider-section {
+  position: relative;
+  .main-title {
+    padding-top: 80px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+  }
+}

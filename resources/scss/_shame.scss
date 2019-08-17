@@ -1,0 +1,8 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are quickfixes for various problems,
+// that are hard to find proper solution or they will be fixed properly later
+// -----------------------------------------------------------------------------
+
+// Problems with stacking context between hero section and other elements on page-product
+// Quickfix creates 3D plane and elements are moved on top/back by transform: translateZ(value)
+// fixing stacking context problems and use z-indexes instead could be better solution in case of IE11 support is needed

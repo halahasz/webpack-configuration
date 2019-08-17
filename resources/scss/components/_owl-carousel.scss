@@ -1,0 +1,96 @@
+.owl-carousel {
+  position: relative;
+  .owl-stage {
+    display: flex;
+  }
+  .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+  }
+  .owl-nav {
+    position: absolute;
+    margin-top: 0;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(calc(-50% - 17px));
+    button {
+      border-radius: 50% !important;
+      position: relative;
+      height: 30px;
+      width: 30px;
+      border: 1px solid $black !important;
+      transition: $transition;
+      box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+      &:focus {
+        outline: none;
+      }
+      &:hover, &:focus {
+        background: $black !important;
+        span {
+          border-color: $white !important;
+        }
+      }
+      span {
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        height: 10px;
+        width: 10px;
+        border-bottom: 2px solid black;
+        border-left: 2px solid black;
+      }
+    }
+    .owl-prev {
+      margin-left: -30px;
+      span {
+        transform: rotate(45deg);
+      }
+      //
+      // ─── IMAGE ──────────────────────────────────────────────────────────────────────
+      //
+      // background: url("../img/arrow_left.png") no-repeat center center !important;
+      // background-size: contain !important;
+    }
+    .owl-next {
+      margin-right: -30px;
+      span {
+        transform: rotate(-135deg);
+        left: 7px;
+      }
+      //
+      // ─── IMAGE ──────────────────────────────────────────────────────────────────────
+      //
+      // background: url("../img/arrow_right.png") no-repeat center center !important;
+      // background-size: contain !important;
+    }
+  }
+}
+.owl-dots {
+  padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+  .owl-carousel {
+    .owl-nav {
+      position: relative;
+      margin-left: 35%;
+      width: 30%;
+      top: 0px;
+      transform: none;
+      padding: 10px 0;
+
+      .owl-prev {
+        margin-left: 0;
+      }
+
+      .owl-next {
+        margin-right: 0;
+      }
+    }
+    .owl-dots {
+      padding-top: 0px;
+    }
+  }
+}

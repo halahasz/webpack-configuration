@@ -1,0 +1,9 @@
+/* Fancybox bug fix */
+.compensate-for-scrollbar {
+  margin: 0 !important;
+}
+
+// Remove blue highlight on click
+.hamburger, .navbar-brand {
+  -webkit-tap-highlight-color: transparent;
+}

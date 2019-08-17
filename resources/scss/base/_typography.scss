@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+	color: $black;
+	font-family: $glob-font;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: $transition;
+	&:visited, &:hover {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	text-align: center;
+	color: $white;
+}
+
+

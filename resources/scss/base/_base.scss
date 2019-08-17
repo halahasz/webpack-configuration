@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+html {
+	overflow-x: hidden;
+}
+body {
+	background: #fff;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+	outline: 1px solid $black;
+}
+
+.content-section {
+  padding-top: 50px;
+}
+
+.fadein {
+	opacity: 0;
+}
+
+.loaded {
+	animation-name: load;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes load {
+	0% {
+		 opacity: 0;
+	}
+
+	50% {
+		 opacity: 0;
+	}
+
+	100% {
+		 opacity: 1;
+	}
+}
+
+@media screen and (-ms-high-contrast: white-on-black) {
+  *:focus {
+		outline: 1px solid $white;
+	}
+}
+
+
+
